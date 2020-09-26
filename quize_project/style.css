@@ -3,6 +3,13 @@
 table {
     border-collapse: collapse;
     margin: auto;
+    overflow-x:auto;
+}
+tr label {
+    margin-bottom: 15px;
+}
+tr input {
+    margin-bottom: 15px !important;
 }
 .view form {
     position: relative;
