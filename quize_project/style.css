@@ -6,7 +6,7 @@ table {
     overflow-x:auto;
 }
 tr label {
-    margin-bottom: 15px;
+    margin-bottom: 15px !important;
 }
 tr input {
     margin-bottom: 15px !important;
