@@ -110,6 +110,7 @@ a.drop-btn {
 table {
     border-collapse: collapse;
     margin: auto;
+    padding-bottom: 30px;
     overflow-x:auto;
 }
 tr label {
@@ -247,6 +248,16 @@ svg.svg-inline--fa.fa-bars.fa-w-14 {
 
 .main {
     padding-top: 90px;
+}
+.sidebar.tactive {
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 91px;
+    right: 0;
+    background: #343a40;
+    animation: all .2s linear;
+    padding: 20px;
 }
 
 }
