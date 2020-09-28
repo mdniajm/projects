@@ -124,14 +124,9 @@ tr input {
    
 }
 form {
-    margin-top: 150px !important;
+    margin-top: 25px !important;
     width: 500px;
     margin: auto;
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
 }
 input{
   outline: none;
@@ -250,7 +245,9 @@ svg.svg-inline--fa.fa-bars.fa-w-14 {
 }
 @media (max-width: 320px){
 
-
+.main {
+    padding-top: 70px;
+}
 
 }
 
