@@ -218,6 +218,7 @@ svg.svg-inline--fa.fa-bars.fa-w-14 {
     background: #343a40;
     animation: all .2s linear;
     padding: 20px;
+    height: 300px;
 }
   .nav-ul.tactive ul {
     width: 100%;
