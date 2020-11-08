@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Dashboard</title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="apple-touch-icon" href="assets/img/favicon.ico">
+      <!-- Place favicon.ico in the root directory -->
+      <!-- CSS
+         ============================================ -->
+      <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+      <link rel="stylesheet" href="assets/css/animate.min.css">
+      <link rel="stylesheet" href="assets/css/all.min.css">
+      <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+      <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+      <div id="boxes" style="display: none;">
+              <div id="dialog"> <b>Result</b>
+                <div id="lorem">
+                  <h1> <span class="text-success">Congratulation</span> or <span class="text-danger">Faild</span></h1>
+                  <p>Total Question:40</p>
+                  <p>Passed Score:25</p>
+                  <p>Your Score: 35</p>
+                  <p>Worng Answer:5</p>
+                  <p>Rate Our Exam:</p>
+                  <form class="result-form">
+                    
+                    <div class="rating float-left">
+                    <input type="radio" id="1star" name="rating" value="5-star">
+                    <label for="1star"></label>
+                    <input type="radio" id="2-star" name="rating" value="4-star">
+                    <label for="2-star"></label>
+                    <input type="radio" id="3-star" name="rating" value="3-star">
+                    <label for="3-star"></label>
+                    <input type="radio" id="4-star" name="rating" value="2-star">
+                    <label for="4-star"></label>
+                    <input type="radio" id="5-star" name="rating" value="1-star">
+                    <label for="5-star"></label><br>
+                    </div>
+
+                    <textarea  class="form-control" name="Opinion" cols="10" rows="3" placeholder="Write Your Opinion About Exam"></textarea> 
+                    <button name="submit" class="btn btn-submit">Submit</button>
+                    <a class="btn btn-danger btn-close" href="#">Close</a> 
+                  </form>
+                  
+                </div>
+                
+              </div>
+              
+            </div>
+      <header>
+         <a href="#"><img src="logo.jpg" alt=""></a>
+         <nav class="fixed-top flex-md-nowrap p-0 shadow bg-secondary">
+            <div class="row">
+               <div class="col-md-6 col-8 text-left">
+                  <h3>Admin Dashboard</h3>
+               </div>
+               <div class="col-md-6 col-4 text-right">
+                  <div class="togglenav"><span class="fas fa-bars"></span></div>
+                  <div class="user-n">
+                     <a class="drop-btn" href="#"><span class="fa fa-user"></span> User</a>
+                     <div class="drop-down">
+                        <a href="#"><span class="fas fa-user-circle"></span> Profile</a>
+                        <hr>
+                        <a href="#"><span class="fas fa-power-off"></span> Logout</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </nav>
+      </header>
+      <div class="container-fluid">
+
+         <!--sidebar start-->
+         <div class="row">
+            <div class="col-md-2 sidebar">
+               <div class="left-sidebar">
+                  <ul class="nav flex-column">
+                     <li class="nav-item"><a class="nav-link" href="index_settings.html"> <span class="fas fa-user-cog"></span> Exam Settings</a></li>
+                     <li class="nav-item"><a class="nav-link" href="index_e_list.html"> <span class="fas fa-list"></span> Exam List</a></li>
+                     <li class="nav-item"><a class="nav-link" href="index_question.html"> <span class="fas fa-play-circle"></span> Start Exam</a></li>
+                     <li class="nav-item"><a class="nav-link" href="index_view.html"> <span class="fas fa-eye"></span> View Question</a></li>
+                     <li class="nav-item"><a class="nav-link" href="index.html"> <span class="fas fa-chart-bar"></span> Exam Statistics</a></li>
+                     <li class="nav-item">
+                        <a class="nav-link side-btn" href="#"> <span class="fas fa-users"></span> Members</a>
+                        <ul class="ul-down">
+                           <li><a href="index_addmember.html"><span class="fas fa-user-plus"></span> Add  Member</a></li>
+                           <li><a href="index_memberlist.html"><span class="fas fa-list-alt"></span> Member List</a></li>
+                        </ul>
+                     </li>
+                     <li class="nav-item user-d">
+                        <a class="nav-link drop-btn" href="#"><span class="fa fa-user"></span>  User</a>
+                        <ul class="drop-down">
+                           <li><a href="#"><span class="fas fa-user-circle"></span> Profile</a></li>
+                           <li><a href="#"><span class="fas fa-power-off"></span> Logout</a></li>
+                        </ul>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <!-- side bar end -->
+            <!-- main-contet start -->
+            <div class="col-md-9 ml-sm-auto col-lg-10 px-4 main">
+               <div class="bodycontent">
+                  
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- JS
+         ============================================ -->
+      <script src="assets/js/vendor/modernizr-3.11.2.min.js"></script>
+      <script src="assets/js/vendor/jquery.min.js"></script>
+      <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+      <script src="assets/js/vendor/jquery-migrate-1.4.1.min.js"></script>
+      <script src="assets/js/plugins/owl.carousel.min.js"></script>
+      <script src="assets/js/vendor/waypoints.min.js"></script>
+      <script src="assets/js/vendor/all.min.js"></script>
+      <script src="assets/js/plugins/jquery.counterup.min.js"></script>
+      <script src="assets/js/plugins/wow.min.js"></script>
+      <script src="assets/js/plugins/plugins.js"></script>
+      <script src="assets/js/plugins/jquery.nav.js"></script>
+      <script src="assets/js/plugins/loader.js"></script>
+      
+      <script src="assets/js/main.js"></script>
+   </body>
+</html>

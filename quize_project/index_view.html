@@ -1,185 +1,165 @@
 <!doctype html>
 <html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <title>Dashboard</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="apple-touch-icon" href="assets/img/favicon.ico">
-  <!-- Place favicon.ico in the root directory -->
-  <!-- CSS
-  ============================================ -->
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-  <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
-  <link rel="stylesheet" href="assets/css/animate.min.css">
-  <link rel="stylesheet" href="assets/css/all.min.css">
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="style.css"> 
-</head>
-
-<body>
+   <head>
+      <meta charset="utf-8">
+      <title>Dashboard</title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="apple-touch-icon" href="assets/img/favicon.ico">
+      <!-- Place favicon.ico in the root directory -->
+      <!-- CSS
+         ============================================ -->
+      <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+      <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+      <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+      <link rel="stylesheet" href="assets/css/animate.min.css">
+      <link rel="stylesheet" href="assets/css/all.min.css">
+      <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+      <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
       <header>
-                <a href="#"><img src="logo.jpg" alt=""></a>
-                <nav class="fixed-top flex-md-nowrap p-0 shadow bg-secondary">
-                    
-                    <div class="row">
-                      <div class="col-md-6 col-8 text-left">
-                        <h3>Admin Dashboard</h3>
-                        
-                       </div>
-                    <div class="col-md-6 col-4 text-right">
-                        <div class="togglenav"><span class="fas fa-bars"></span></div>
-                       <div class="user-n">
-                          <a class="drop-btn" href="#"><span class="fa fa-user"></span> User</a>
-                        <div class="drop-down">
-                          <a href="#"><span class="fas fa-user-circle"></span> Profile</a>
-                          <hr>
-                          <a href="#"><span class="fas fa-power-off"></span> Logout</a>
-                        </div>
-                       </div>
-    
-                    </div>
-                    
-                    </div>
-                </nav>
-            </header>
-       
-   <div class="container-fluid">
+         <a href="#"><img src="logo.jpg" alt=""></a>
+         <nav class="fixed-top flex-md-nowrap p-0 shadow bg-secondary">
+            <div class="row">
+               <div class="col-md-6 col-8 text-left">
+                  <h3>Admin Dashboard</h3>
+               </div>
+               <div class="col-md-6 col-4 text-right">
+                  <div class="togglenav"><span class="fas fa-bars"></span></div>
+                  <div class="user-n">
+                     <a class="drop-btn" href="#"><span class="fa fa-user"></span> User</a>
+                     <div class="drop-down">
+                        <a href="#"><span class="fas fa-user-circle"></span> Profile</a>
+                        <hr>
+                        <a href="#"><span class="fas fa-power-off"></span> Logout</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </nav>
+      </header>
+      <div class="container-fluid">
          <!--sidebar start-->
-
          <div class="row">
-             <div class="col-md-2 sidebar">
-              <div class="left-sidebar">
-                <ul class="nav flex-column">
-                    <li class="nav-item"><a class="nav-link" href="index_settings.html"> <span class="fas fa-user-cog"></span> Exam Settings</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index_e_list.html"> <span class="fas fa-list"></span> Exam List</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index_view.html"> <span class="fas fa-eye"></span> View Question</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html"> <span class="fas fa-chart-bar"></span> Exam Statistics</a></li>
-                    <li class="nav-item"><a class="nav-link side-btn" href="#"> <span class="fas fa-users"></span> Members</a>
+            <div class="col-md-2 sidebar">
+               <div class="left-sidebar">
+                  <ul class="nav flex-column">
+                     <li class="nav-item"><a class="nav-link" href="index_settings.html"> <span class="fas fa-user-cog"></span> Exam Settings</a></li>
+                     <li class="nav-item"><a class="nav-link" href="index_e_list.html"> <span class="fas fa-list"></span> Exam List</a></li>
+                     <li class="nav-item"><a class="nav-link" href="index_question.html"> <span class="fas fa-play-circle"></span> Start Exam</a></li>
+                     <li class="nav-item"><a class="nav-link" href="index_view.html"> <span class="fas fa-eye"></span> View Question</a></li>
+                     <li class="nav-item"><a class="nav-link" href="index.html"> <span class="fas fa-chart-bar"></span> Exam Statistics</a></li>
+                     <li class="nav-item">
+                        <a class="nav-link side-btn" href="#"> <span class="fas fa-users"></span> Members</a>
                         <ul class="ul-down">
-                            <li><a href="index_addmember.html"><span class="fas fa-user-plus"></span> Add  Member</a></li>
-                            <li><a href="index_memberlist.html"><span class="fas fa-list-alt"></span> Member List</a></li>
-                           
+                           <li><a href="index_addmember.html"><span class="fas fa-user-plus"></span> Add  Member</a></li>
+                           <li><a href="index_memberlist.html"><span class="fas fa-list-alt"></span> Member List</a></li>
                         </ul>
-                    </li>
-                    <li class="nav-item user-d"> <a class="nav-link drop-btn" href="#"><span class="fa fa-user"></span>  User</a>
+                     </li>
+                     <li class="nav-item user-d">
+                        <a class="nav-link drop-btn" href="#"><span class="fa fa-user"></span>  User</a>
                         <ul class="drop-down">
-                            <li><a href="#"><span class="fas fa-user-circle"></span> Profile</a></li>
-                            <li><a href="#"><span class="fas fa-power-off"></span> Logout</a></li>
-                           
+                           <li><a href="#"><span class="fas fa-user-circle"></span> Profile</a></li>
+                           <li><a href="#"><span class="fas fa-power-off"></span> Logout</a></li>
                         </ul>
-                    </li>
-
-                </ul>
+                     </li>
+                  </ul>
+               </div>
             </div>
-           </div>
-           <!-- side bar end -->
-           <!-- main-contet start -->
-
-           <div class="col-md-9 ml-sm-auto col-lg-10 px-4 main">
-              <div class="bodycontent">
-             
-                <h1 class="text-center"> View Question</h1><hr>
-                <div class="view">
-                  <form class="text-center">
-                  <input class="form-control" type="text" name="exam-name" placeholder="Exam Name" required>
-                  <button class="btn btn-primary rounded-0 mt-2">Search</button>
-                </form>
-                </div>
-                <div class="table-responsive mt-3">
-                    <table class="table table-striped table-bordered">
-                    <tr>
-                      <th>Question Id</th>
-                      <th>Question</th>
-                      <th>Correct Answer</th>
-                      <th>Option 1</th>
-                      <th>Option 2</th>
-                      <th>Option 3</th>
-                      <th class="text-center">Edit </th>
-                      <th class="text-center">Delete </th>
-                      
-                    </tr>
-                    <tr>
-                      <td>1</td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td class="text-center"><a class="btn btn-info" href="#">Edit</a></td>
-                      <td class="text-center"><a class="btn btn-danger" href="#">Delete</a></td>
-                    </tr>
-                    <tr>
-                      <td>1</td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td class="text-center"><a class="btn btn-info" href="#">Edit</a></td>
-                      <td class="text-center"><a class="btn btn-danger" href="#">Delete</a></td>
-                    </tr>
-                   <tr>
-                      <td>1</td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td class="text-center"><a class="btn btn-info" href="#">Edit</a></td>
-                      <td class="text-center"><a class="btn btn-danger" href="#">Delete</a></td>
-                    </tr>
-
-                </table>
-           
-                </div>
-              
-           </div>
-                <nav aria-label="Page navigation example">
-  <ul class="pagination">
-    <li class="page-item">
-      <a class="page-link" href="#" aria-label="Previous">
-        <span aria-hidden="true">&laquo;</span>
-        <span class="sr-only">Previous</span>
-      </a>
-    </li>
-    <li class="page-item"><a class="page-link" href="#">1</a></li>
-    <li class="page-item"><a class="page-link" href="#">2</a></li>
-    <li class="page-item"><a class="page-link" href="#">3</a></li>
-    <li class="page-item">
-      <a class="page-link" href="#" aria-label="Next">
-        <span aria-hidden="true">&raquo;</span>
-        <span class="sr-only">Next</span>
-      </a>
-    </li>
-  </ul>
-</nav>
-
+            <!-- side bar end -->
+            <!-- main-contet start -->
+            <div class="col-md-9 ml-sm-auto col-lg-10 px-4 main">
+               <div class="bodycontent">
+                  <h1 class="text-center"> View Question</h1>
+                  <hr>
+                  <div class="view">
+                     <form class="text-center">
+                        <input class="form-control" type="text" name="exam-name" placeholder="Exam Name" required>
+                        <button class="btn btn-primary rounded-0 mt-2">Search</button>
+                     </form>
+                  </div>
+                  <div class="table-responsive mt-3">
+                     <table class="table table-striped table-bordered">
+                        <tr>
+                           <th>Question Id</th>
+                           <th>Question</th>
+                           <th>Correct Answer</th>
+                           <th>Option 1</th>
+                           <th>Option 2</th>
+                           <th>Option 3</th>
+                           <th class="text-center">Edit </th>
+                           <th class="text-center">Delete </th>
+                        </tr>
+                        <tr>
+                           <td>1</td>
+                           <td></td>
+                           <td></td>
+                           <td></td>
+                           <td></td>
+                           <td></td>
+                           <td class="text-center"><a class="btn btn-info" href="#">Edit</a></td>
+                           <td class="text-center"><a class="btn btn-danger" href="#">Delete</a></td>
+                        </tr>
+                        <tr>
+                           <td>1</td>
+                           <td></td>
+                           <td></td>
+                           <td></td>
+                           <td></td>
+                           <td></td>
+                           <td class="text-center"><a class="btn btn-info" href="#">Edit</a></td>
+                           <td class="text-center"><a class="btn btn-danger" href="#">Delete</a></td>
+                        </tr>
+                        <tr>
+                           <td>1</td>
+                           <td></td>
+                           <td></td>
+                           <td></td>
+                           <td></td>
+                           <td></td>
+                           <td class="text-center"><a class="btn btn-info" href="#">Edit</a></td>
+                           <td class="text-center"><a class="btn btn-danger" href="#">Delete</a></td>
+                        </tr>
+                     </table>
+                  </div>
+               </div>
+               <nav aria-label="Page navigation example">
+                  <ul class="pagination">
+                     <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                        <span class="sr-only">Previous</span>
+                        </a>
+                     </li>
+                     <li class="page-item"><a class="page-link" href="#">1</a></li>
+                     <li class="page-item"><a class="page-link" href="#">2</a></li>
+                     <li class="page-item"><a class="page-link" href="#">3</a></li>
+                     <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                        <span class="sr-only">Next</span>
+                        </a>
+                     </li>
+                  </ul>
+               </nav>
+            </div>
          </div>
-           
-                 
-            </div>
-           
-
-        </div>   
-  
-  <!-- JS
-  ============================================ -->
-  <script src="assets/js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="assets/js/vendor/jquery.min.js"></script>
-  <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/vendor/jquery-migrate-1.4.1.min.js"></script>
-  <script src="assets/js/plugins/owl.carousel.min.js"></script>
-  <script src="assets/js/vendor/waypoints.min.js"></script>
-  <script src="assets/js/vendor/all.min.js"></script>
-  <script src="assets/js/plugins/jquery.counterup.min.js"></script>
-  <script src="assets/js/plugins/wow.min.js"></script>
-  <script src="assets/js/plugins/plugins.js"></script>
-  <script src="assets/js/plugins/jquery.nav.js"></script>
-  <script src="assets/js/plugins/loader.js"></script>
-  <script src="assets/js/main.js"></script>
-</body>
-
+      </div>
+      <!-- JS
+         ============================================ -->
+      <script src="assets/js/vendor/modernizr-3.11.2.min.js"></script>
+      <script src="assets/js/vendor/jquery.min.js"></script>
+      <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+      <script src="assets/js/vendor/jquery-migrate-1.4.1.min.js"></script>
+      <script src="assets/js/plugins/owl.carousel.min.js"></script>
+      <script src="assets/js/vendor/waypoints.min.js"></script>
+      <script src="assets/js/vendor/all.min.js"></script>
+      <script src="assets/js/plugins/jquery.counterup.min.js"></script>
+      <script src="assets/js/plugins/wow.min.js"></script>
+      <script src="assets/js/plugins/plugins.js"></script>
+      <script src="assets/js/plugins/jquery.nav.js"></script>
+      <script src="assets/js/plugins/loader.js"></script>
+      <script src="assets/js/main.js"></script>
+   </body>
 </html>

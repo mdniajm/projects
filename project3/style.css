@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Pacifico&display=swap');
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Work Sans', sans-serif;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  
+}
+/*header section start*/
+.wrapper{
+  height: 100vh;
+  
+}
+.overlay{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #00000045;
+  height: 100vh;
+  z-index: -1;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  
+}
+header .logo {
+  font-size: 30px;
+  color: #ec615b;
+  font-family: 'Pacifico', cursive;
+}
+header a{
+  text-decoration: none;
+  font-weight: 700;
+}
+header a:hover{
+  text-decoration: none;
+  
+}
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0 auto;
+    padding-left: 0 !important;
+}
+nav ul li{
+  padding: 0 20px;
+}
+nav ul li:nth-child(1){
+  padding-left: 0;
+}
+nav ul li:nth-child(4){
+  padding-right: 0;
+}
+/*header section end*/
+
+/*home section start*/
+.home{
+  height: 80vh;
+
+  /*background: url("assets/img/home-bg.jpg");*/
+ 
+}
+.title {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+   
+}
+/*home section end*/
+/*Services Section Start*/
+.about{
+  height: 100vh;
+  margin: 100px auto;
+}
+.about .col-md-6, .about .col-12 {
+  padding-left: 0;
+  padding-right: 0;
+}
+.info1{
+  background: url("assets/img/gra.jpg");
+  background-size: cover;
+
+  height: 90vh;
+}
+.info2{
+  background: url("assets/img/des.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 45vh;
+}
+.info3{
+  background: url("assets/img/dev.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 45vh;
+}
+
+
+.text {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 500px;
+    padding: 25px 25px;
+    text-align: justify;
+    margin: auto;
+    background: #00000061;  
+}
+
+
+
+
+
+/*Services Section End*/
+
+
+
+
+
+
+
+
+
+
+/*media query*/
+@media (max-width: 1200px){
+ 
+   
+}
+@media (max-width: 992px){
+  
+
+}
+@media (max-width: 768px){
+  
+header{
+  display: flex;
+  flex-direction: column;
+  
+  align-items: center;
+  padding: 20px;
+}
+.info1{
+  background: url("assets/img/gra.jpg");
+  background-size: cover;
+
+  height: 45vh;
+}
+
+}
+@media (max-width: 576px){
+  
+  nav ul li{
+  padding: 0 12px;
+}
+nav ul li:nth-child(1){
+  padding-left: 0;
+}
+nav ul li:nth-child(4){
+  padding-right: 0;
+}
+
+ 
+
+
+}
+@media (max-width: 320px){
+
+nav ul li{
+  padding: 0 5px;
+}
+nav ul li:nth-child(1){
+  padding-left: 0;
+}
+nav ul li:nth-child(4){
+  padding-right: 0;
+}
+
+
+}
+
+

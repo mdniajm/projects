@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Dashboard</title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="apple-touch-icon" href="assets/img/favicon.ico">
+      <!-- Place favicon.ico in the root directory -->
+      <!-- CSS
+         ============================================ -->
+      <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+      <link rel="stylesheet" href="assets/css/animate.min.css">
+      <link rel="stylesheet" href="assets/css/all.min.css">
+      <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+      <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+      <header>
+         <a href="#"><img src="logo.jpg" alt=""></a>
+         <nav class="fixed-top flex-md-nowrap p-0 shadow bg-secondary">
+            <div class="row">
+               <div class="col-md-6 col-8 text-left">
+                  <h3>Admin Dashboard</h3>
+               </div>
+               <div class="col-md-6 col-4 text-right">
+                  <div class="togglenav"><span class="fas fa-bars"></span></div>
+                  <div class="user-n">
+                     <a class="drop-btn" href="#"><span class="fa fa-user"></span> User</a>
+                     <div class="drop-down">
+                        <a href="#"><span class="fas fa-user-circle"></span> Profile</a>
+                        <hr>
+                        <a href="#"><span class="fas fa-power-off"></span> Logout</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </nav>
+      </header>
+      <div class="container-fluid">
+         <!--sidebar start-->
+         <div class="row">
+            <div class="col-md-2 sidebar">
+               <div class="left-sidebar">
+                  <ul class="nav flex-column">
+                     <li class="nav-item"><a class="nav-link" href="index_settings.html"> <span class="fas fa-user-cog"></span> Exam Settings</a></li>
+                     <li class="nav-item"><a class="nav-link" href="index_e_list.html"> <span class="fas fa-list"></span> Exam List</a></li>
+                     <li class="nav-item"><a class="nav-link" href="index_question.html"> <span class="fas fa-play-circle"></span> Start Exam</a></li>
+                     <li class="nav-item"><a class="nav-link" href="index_view.html"> <span class="fas fa-eye"></span> View Question</a></li>
+                     <li class="nav-item"><a class="nav-link" href="index.html"> <span class="fas fa-chart-bar"></span> Exam Statistics</a></li>
+                     <li class="nav-item">
+                        <a class="nav-link side-btn" href="#"> <span class="fas fa-users"></span> Members</a>
+                        <ul class="ul-down">
+                           <li><a href="index_addmember.html"><span class="fas fa-user-plus"></span> Add  Member</a></li>
+                           <li><a href="index_memberlist.html"><span class="fas fa-list-alt"></span> Member List</a></li>
+                        </ul>
+                     </li>
+                     <li class="nav-item user-d">
+                        <a class="nav-link drop-btn" href="#"><span class="fa fa-user"></span>  User</a>
+                        <ul class="drop-down">
+                           <li><a href="#"><span class="fas fa-user-circle"></span> Profile</a></li>
+                           <li><a href="#"><span class="fas fa-power-off"></span> Logout</a></li>
+                        </ul>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <!-- side bar end -->
+            <!-- main-contet start -->
+            <div class="col-md-9 ml-sm-auto col-lg-10 px-4 main">
+               <div class="bodycontent">
+                  <div class="title text-center">
+                     <h1>Exam Name</h1>
+                     <p>Total Marks: 50</p>
+                     <p>Total Question: 50</p>
+                     <p>Time: 60 minutes</p>
+                  </div>
+               	<form class="question-form" action="">
+               	<span>Q1.</span><p> Lorem ipsum dolor, sit amet consectetur, adipisicing elit. Repellat totam, similique. Magnam beatae itaque id, voluptate deleniti, culpa illo explicabo nulla. Ut autem dolores asperiores quaerat eligendi repudiandae nihil blanditiis.</p>
+                  <div class="answer-sheet">
+                     <label for="q1">A. First Question? </label><br>
+                  <textarea class="form-control" name="q1" id="q1" cols="30" rows="3" placeholder="Answer"></textarea>
+                  <div class="button-group d-flex justify-content-end mt-2">
+                     <button class="btn btn-info">Bangla</button>
+                  <button class="btn btn-danger">English</button>
+                  </div>
+                  <label for="q2">B. Second Question? </label><br>
+                  <textarea class="form-control" name="q2" id="q2" cols="30" rows="5" placeholder="Answer"></textarea>
+                  <div class="button-group d-flex justify-content-end mt-2">
+                     <button class="btn btn-info">Bangla</button>
+                  <button class="btn btn-danger">English</button>
+                  </div>
+                  <label for="q3">C. Third Question? </label><br>
+                  <textarea class="form-control" name="q3" id="q3" cols="30" rows="7" placeholder="Answer"></textarea>
+                  <div class="button-group d-flex justify-content-end mt-2">
+                     <button class="btn btn-info">Bangla</button>
+                  <button class="btn btn-danger">English</button>
+                  </div>
+                  <label for="q4">D. Fourth Question? </label><br>
+                  <textarea class="form-control" name="q4" id="q4" cols="30" rows="10" placeholder="Answer"></textarea>
+                  <div class="button-group d-flex justify-content-end mt-2">
+                     <button class="btn btn-info">Bangla</button>
+                  <button class="btn btn-danger">English</button>
+                  </div>
+
+                  </div>
+                  <button name="submit" class="btn btn-secondary mt-2">Submit</button>
+
+
+
+
+
+               	</form>
+                  
+
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- JS
+         ============================================ -->
+      <script src="assets/js/vendor/modernizr-3.11.2.min.js"></script>
+      <script src="assets/js/vendor/jquery.min.js"></script>
+      <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+      <script src="assets/js/vendor/jquery-migrate-1.4.1.min.js"></script>
+      <script src="assets/js/plugins/owl.carousel.min.js"></script>
+      <script src="assets/js/vendor/waypoints.min.js"></script>
+      <script src="assets/js/vendor/all.min.js"></script>
+      <script src="assets/js/plugins/jquery.counterup.min.js"></script>
+      <script src="assets/js/plugins/wow.min.js"></script>
+      <script src="assets/js/plugins/plugins.js"></script>
+      <script src="assets/js/plugins/jquery.nav.js"></script>
+      <script src="assets/js/plugins/loader.js"></script>
+      <script src="assets/js/main.js"></script>
+   </body>
+</html>

@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Dashboard</title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="apple-touch-icon" href="assets/img/favicon.ico">
+      <!-- Place favicon.ico in the root directory -->
+      <!-- CSS
+         ============================================ -->
+      <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+      <link rel="stylesheet" href="../assets/css/animate.min.css">
+      <link rel="stylesheet" href="../assets/css/all.min.css">
+      <link rel="stylesheet" href="../assets/css/slick.css">
+      <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+      <link rel="stylesheet" href="../style.css">
+   </head>
+   <body>
+      <header>
+         <a href="#"><img src="logo.jpg" alt=""></a>
+         <nav class="fixed-top flex-md-nowrap p-0 shadow bg-secondary">
+            <div class="row">
+               <div class="col-md-6 col-8 text-left">
+                  <h3>Admin Dashboard</h3>
+               </div>
+               <div class="col-md-6 col-4 text-right">
+                  <div class="togglenav"><span class="fas fa-bars"></span></div>
+                  <div class="user-n">
+                     <a class="drop-btn" href="#"><span class="fa fa-user"></span> User</a>
+                     <div class="drop-down">
+                        <a href="#"><span class="fas fa-user-circle"></span> Profile</a>
+                        <hr>
+                        <a href="#"><span class="fas fa-power-off"></span> Logout</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </nav>
+      </header>
+      <div class="container-fluid">
+         <!--sidebar start-->
+         <div class="row">
+            <div class="col-md-2 sidebar">
+               <div class="left-sidebar">
+                  <ul class="nav flex-column">
+                     <li class="nav-item"><a class="nav-link" href="../index_settings.html"> <span class="fas fa-user-cog"></span> Exam Settings</a></li>
+                     <li class="nav-item"><a class="nav-link" href="../index_e_list.html"> <span class="fas fa-list"></span> Exam List</a></li>
+                     <li class="nav-item"><a class="nav-link" href="../index_question.html"> <span class="fas fa-play-circle"></span> Start Exam</a></li>
+                     <li class="nav-item"><a class="nav-link" href="../index_view.html"> <span class="fas fa-eye"></span> View Question</a></li>
+                     <li class="nav-item"><a class="nav-link" href="../index.html"> <span class="fas fa-chart-bar"></span> Exam Statistics</a></li>
+                     <li class="nav-item">
+                        <a class="nav-link side-btn" href="#"> <span class="fas fa-users"></span> Members</a>
+                        <ul class="ul-down">
+                           <li><a href="../index_addmember.html"><span class="fas fa-user-plus"></span> Add  Member</a></li>
+                           <li><a href="../index_memberlist.html"><span class="fas fa-list-alt"></span> Member List</a></li>
+                        </ul>
+                     </li>
+                     <li class="nav-item user-d">
+                        <a class="nav-link drop-btn" href="#"><span class="fa fa-user"></span>  User</a>
+                        <ul class="drop-down">
+                           <li><a href="#"><span class="fas fa-user-circle"></span> Profile</a></li>
+                           <li><a href="#"><span class="fas fa-power-off"></span> Logout</a></li>
+                        </ul>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <!-- side bar end -->
+            <!-- main-contet start -->
+            <div class="col-md-9 ml-sm-auto col-lg-10 px-4 main">
+               <div class="bodycontent">
+                  <div class="title text-center">
+                     <h1>Exam Name</h1>
+                     <p>Total Marks: 50</p>
+                     <p>Total Question: 50</p>
+                     <p>Time: 60 minutes</p>
+                  </div>
+               	<form class="question-form" action="">
+                     <span>Q1.</span><p> Lorem ipsum dolor, sit amet consectetur, adipisicing elit. Repellat totam, similique. Magnam beatae itaque id, voluptate deleniti, culpa illo explicabo nulla. Ut autem dolores asperiores quaerat eligendi repudiandae nihil blanditiis.</p>
+                     <section class="regular slider">
+                         <div class="answer">
+                          <p>A. First Question? </p>
+                          <span>Answer:</span><p>Lorem, ipsum dolor sit amet.</p>
+                           <div class=" d-flex justify-content-end mt-2">
+                              <p>Estimate Mark: 1 </p> <br>
+                              <label for="mark">&nbsp; Obtained Mark: &nbsp;</label>
+                              <input class="form-control-sm" type="number" id="mark" name="q-a-mark">
+                           
+                           </div>
+                     
+                          </div>
+                          <div class="answer">
+                          <p>B. Second Question? </p>
+                          <span>Answer:</span><p>Lorem, ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus totam vitae labore, sunt suscipit commodi?</p>
+                           <div class=" d-flex justify-content-end mt-2">
+                              <p>Estimate Mark: 2 </p> <br>
+                              <label for="mark">&nbsp; Obtained Mark: &nbsp;</label>
+                              <input class="form-control-sm" type="number" id="mark" name="q-b-mark">
+                           
+                           </div>
+                     
+                          </div>
+                          <div class="answer">
+                          <p>C. Third Question? </p>
+                          <span>Answer:</span><p>Lorem, ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, eligendi! Recusandae, dolores. Sint dolorem eligendi assumenda minima, consequuntur corrupti voluptas! Cupiditate nam quae architecto deserunt vero pariatur provident perferendis quaerat. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, maiores.</p>
+                           <div class=" d-flex justify-content-end mt-2">
+                              <p>Estimate Mark: 3 </p> <br>
+                              <label for="mark">&nbsp; Obtained Mark: &nbsp;</label>
+                              <input class="form-control-sm" type="number" id="mark" name="q-c-mark">
+                           
+                           </div>
+                     
+                           </div>
+                           <div class="answer">
+                          <p>D. Fourth Question? </p>
+                          <span>Answer:</span><p>Lorem, ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit pariatur architecto doloremque in assumenda beatae dolore omnis quas aut voluptatem sapiente animi id labore quis a ipsa consequuntur, adipisci, magni deserunt vitae iusto quam iste quasi cum quia. Voluptatum sit, provident ipsum rem molestias, voluptates eum! Maiores, sit. Fugiat nostrum, aliquam dolorem nemo porro voluptatum, magni aperiam nobis! Repellendus, aut? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim voluptatem, molestias aliquid dolorum saepe laboriosam culpa placeat, quod fuga quos a tempora excepturi porro fugit repudiandae ut atque nesciunt, aperiam.</p>
+                           <div class=" d-flex justify-content-end mt-2">
+                              <p>Estimate Mark: 4 </p> <br>
+                              <label for="mark">&nbsp; Obtained Mark: &nbsp;</label>
+                              <input class="form-control-sm" type="number" id="mark" name="q-d-mark">
+                           
+                           </div>
+                     
+                           </div>
+                     </section>
+               	
+                  
+                        <button name="submit" class="submit btn btn-secondary"> Submit</button>
+
+
+
+
+
+               	</form>
+                  
+
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- JS
+         ============================================ -->
+      <script src="../assets/js/vendor/modernizr-3.11.2.min.js"></script>
+      <script src="../assets/js/vendor/jquery.min.js"></script>
+      <script src="../assets/js/vendor/bootstrap.bundle.min.js"></script>
+      <script src="../assets/js/vendor/jquery-migrate-1.4.1.min.js"></script>
+      <script src="../assets/js/plugins/owl.carousel.min.js"></script>
+      <script src="../assets/js/vendor/waypoints.min.js"></script>
+      <script src="../assets/js/vendor/all.min.js"></script>
+      <script src="../assets/js/plugins/jquery.counterup.min.js"></script>
+      <script src="../assets/js/plugins/wow.min.js"></script>
+      <script src="../assets/js/plugins/plugins.js"></script>
+      <script src="../assets/js/plugins/jquery.nav.js"></script>
+      <script src="../assets/js/plugins/loader.js"></script>
+      <script src="../assets/js/plugins/slick.min.js"></script>
+      <script src="../assets/js/main.js"></script>
+   </body>
+</html>

@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Work+Sans&display=swap');
- 
+
 
 body {
   margin: 0;
@@ -146,19 +146,235 @@ input{
 .user-n{
 
 }
+/*index_exam style start*/
+.wrapper{
+      position: absolute;
+      top: 64px;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
+.exam-form{
+    margin-top: 0;
+    max-width: 100%;
+    margin: auto;
+}
+    .slick-slide {
+      margin: 0px 20px;
+    }
 
+    .slick-slide img {
+      width: 100%;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+      color: black;
+    }
+
+
+    .slick-slide {
+      transition: all ease-in-out .3s;
+      opacity: .2;
+    }
+    
+   
+    .slick-active button{
+      background:  #4CAF50 !important;
+      color: #fff !important;
+    }
+
+    .slick-current {
+      opacity: 1;
+    }
+    .slick-initialized .slick-slide {
+    display: block;
+    outline: none;
+}
+ul.slick-dots {
+    max-width: 480px;
+    margin: auto;
+    position: relative;
+    padding-top: 20px;
+    padding-left: 0;
+}
+    li {
+    list-style: none !important;
+    display: inline-block;
+    padding: 10px;
+    /* color: ; */
+}
+
+li button {
+    color: #4CAF50;
+    border: 2px solid #4CAF50;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    padding: 1px 1px 1px 1px;
+}
+button:focus{
+  outline: none;
+}
+button.slick-next.slick-arrow {
+    color: black;
+    border: 1px solid #80808061;
+    width: 100px;
+    height: 36px;
+    border-radius: 5px;
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+}
+button.slick-prev.slick-arrow {
+    color: black;
+    border:1px solid #80808061;
+    width: 100px;
+    height: 36px;
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+    bottom: -40px;
+}
+button.slick-next.slick-arrow:hover{
+  background-color: #4CAF50;
+  color: white;
+  border: 2px solid #4CAF50;
+}
+button.slick-prev.slick-arrow:hover{
+  background-color: #4CAF50;
+  color: white;
+  border: 2px solid #4CAF50;
+}
+   .submit {
+    position: absolute;
+    left: 46%;
+}
+
+
+.result{
+  display: none;
+}
+.show{
+  display: block;
+}
+/*Result Popup Start*/
+#boxes {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    z-index: 9999;
+}
+#dialog {
+    max-width: 500px;
+    margin: 85px auto;
+    height: auto;
+    padding: 20px;
+    font-family: 'Segoe UI Light', sans-serif;
+    font-size: 15pt;
+    background: #ffffff;
+    border-radius: 10px;
+}
+
+.result-form{
+  margin-top: 0 !important;
+  position: relative;
+}
+input[name=rating] {
+    display: none;
+}
+.rating {
+    transform: rotateY(180deg);
+    margin-left: -7px;
+    margin-bottom: 17px;
+    margin-top: -8px;
+}
+.rating label {
+    display: inline-block;
+    cursor: pointer;
+    width: 25px;
+    background: #fff;
+    position: relative;
+}
+.rating label:before{
+   content: '\f005';
+  font-family: "Font Awesome 5 free";
+  position: relative;
+  display: block;
+  font-size: 16px;
+  color: gray;
+  font-weight: 900;
+  
+}
+.rating label:after{
+  content: '\f005';
+  font-family: "Font Awesome 5 free";
+  position: absolute;
+  display: block;
+  font-size: 16px;
+  color:  #FFC107;
+  font-weight: 900;
+  top: 0;
+  opacity: 0;
+  transition: .5s;
+  text-shadow: 0 2px 5px rgba(0,0,0,.5);
+
+}
+.rating label:hover:after,
+.rating label:hover ~ label:after,
+.rating input:checked ~ label:after{
+  opacity: 1;
+}
+button.btn.btn-submit {
+  margin-top: 10px;
+    background: #9E9E9E;
+    color: white;
+}
+a.btn.btn-danger {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+/*Result Popup End*/
+/*Sample Question Page Start*/
+.question-form {
+    max-width: 100% !important;
+}
+table.qchild-table {
+    margin-left: 20px;
+}
+.question-form ul.slick-dots {
+    max-width: 200px;
+    margin: auto;
+    position: relative;
+    padding-top: 20px;
+    padding-left: 0;
+}
+
+/*Sample Question Page End*/
 
 
 /*media query*/
 @media (max-width: 1200px){
 
-   
+   button.btn.btn-secondary {
+    position: absolute;
+    left: 46%;
+}
 }
 @media (max-width: 992px){
   
-
+button.btn.btn-secondary {
+    position: absolute;
+    left: 44%;
+}
 }
 @media (max-width: 768px){
+  button.btn.btn-secondary {
+    position: absolute;
+    left: 44%;
+}
   .user-n{
     display: none;
   }
@@ -211,6 +427,7 @@ svg.svg-inline--fa.fa-bars.fa-w-14 {
 }
  .sidebar.tactive {
     width: 100%;
+    height: 1000px;
     display: block;
     position: absolute;
     top: 61px;
@@ -218,7 +435,7 @@ svg.svg-inline--fa.fa-bars.fa-w-14 {
     background: #343a40;
     animation: all .2s linear;
     padding: 20px;
-    height: 300px;
+    
 }
   .nav-ul.tactive ul {
     width: 100%;
@@ -242,10 +459,17 @@ svg.svg-inline--fa.fa-bars.fa-w-14 {
 }
 @media (max-width: 576px){
 
-
+ button.btn.btn-secondary {
+    position: absolute;
+    left: 41%;
+}
 
 }
 @media (max-width: 432px){
+   button.btn.btn-secondary {
+    position: absolute;
+    left: 41%;
+}
 
 .main {
     padding-top: 90px;
@@ -260,12 +484,60 @@ svg.svg-inline--fa.fa-bars.fa-w-14 {
     animation: all .2s linear;
     padding: 20px;
 }
+.wrapper {
+    position: absolute;
+    top: 90px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
 
 }
 
-@media (max-width: 320px){
+@media (max-width: 400px){
+
+button.btn.btn-secondary {
+    position: absolute;
+    left: 39%;
+}
 
 
+}
+@media (max-width: 348px){
+
+button.btn.btn-secondary {
+    position: absolute;
+    left: 38%;
+}
+
+}
+@media (max-width: 348px){
+
+button.btn.btn-secondary {
+    position: absolute;
+    left: 38%;
+
+}
+button.slick-next.slick-arrow {
+    color: black;
+    border: 1px solid #80808061;
+    width: 100px;
+    height: 36px;
+    border-radius: 5px;
+    position: absolute;
+    left: 33%;
+    bottom: -80px;
+}
+button.slick-prev.slick-arrow {
+    color: black;
+    border:1px solid #80808061;
+    width: 100px;
+    height: 36px;
+    border-radius: 5px;
+    position: absolute;
+    left: 33%;
+    bottom: -124px;
+}
 
 }
 

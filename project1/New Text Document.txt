@@ -1,0 +1,15 @@
+1.  71s
+2.  bz3
+3. font size px a kore dibo
+4. 0za padding dibo
+5. slider er next prev sob somoy thakbe.
+6. home section er button ta niche nambe. ar animation jog korbo.
+7. About us er pic er shadow ta thik korte hobe.
+
+
+<script src="{{ 'jquery-2.2.3.min.js' | asset_url }}" defer="defer"></script>
+
+
+<script src="{{ 'lazysizes.min.js' | asset_url }}" async="async"></script>
+
+  <script src="{{ 'theme.js' | asset_url }}" defer="defer"></script>

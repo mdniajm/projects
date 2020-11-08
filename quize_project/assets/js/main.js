@@ -21,6 +21,9 @@ $(document).ready(function() {
         stickyNav();
     });
     $(document).ready(function(){
+      setTimeout(function(){
+             $('#boxes').css('display', 'block')
+      }, 1000);
 
  
    $(".drop-btn").click(function(){
@@ -70,7 +73,17 @@ $(function() {
     });
 });
 
+$(document).on('ready', function() {
+     
+      $(".regular").slick({
+        dots: true,
 
+        infinite: false,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      });
+      
+    });
 
      
 
